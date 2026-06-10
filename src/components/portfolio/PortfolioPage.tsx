@@ -9,6 +9,7 @@ import {
   Download,
   Mail,
   MapPin,
+  MessageCircle,
   Monitor,
   Network,
   ShieldCheck,
@@ -26,6 +27,7 @@ import {
   projects,
   systems
 } from "@/lib/profile";
+import { DigitalTwinChat } from "@/components/portfolio/DigitalTwinChat";
 
 type IconName = (typeof capabilities)[number]["icon"];
 type IconComponent = ComponentType<LucideProps>;
@@ -42,6 +44,7 @@ export function PortfolioPage() {
     <main className="site-shell">
       <SiteHeader />
       <Hero />
+      <DigitalTwinChat />
       <Capabilities />
       <About />
       <Journey />
@@ -103,6 +106,10 @@ function Hero() {
             <a className="action-button ghost" href={profile.resumeUrl} target="_blank" rel="noreferrer">
               <Download size={18} strokeWidth={1.9} aria-hidden="true" />
               CV
+            </a>
+            <a className="action-button" href="#digital-twin">
+              <MessageCircle size={18} strokeWidth={1.9} aria-hidden="true" />
+              Ask AI
             </a>
           </div>
         </div>

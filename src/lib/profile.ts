@@ -15,6 +15,7 @@ export const profile = {
 
 export const navItems = [
   { label: "About", href: "#about" },
+  { label: "Ask AI", href: "#digital-twin" },
   { label: "Journey", href: "#journey" },
   { label: "Systems", href: "#systems" },
   { label: "Contact", href: "#contact" }
